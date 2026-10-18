@@ -87,10 +87,10 @@ function App() {
     }).format(numericAmount);
     const message = `अस्सलामु अलैकुम, ${selectedCustomer.name}
   आपके डिब्बा नंबर ${selectedCustomer.dibba} से
-  ₹${formattedAmount} मदरसा हज़रत अली बिन अबी तालिब, पलुस में जमा हुए।
+  *${formattedAmount} ₹* मदरसा हज़रत अली बिन अबी तालिब, पलुस में जमा हुए।
 
-  रसूलुल्लाह ﷺ ने फरमाया:
-  "सदका गुनाहों को ऐसे बुझा देता है जैसे पानी आग को बुझा देता है।" (इब्न माजा)`;
+  *रसूलुल्लाह ﷺ ने फरमाया*:
+  "*सदका गुनाहों को ऐसे बुझा देता है जैसे पानी आग को बुझा देता है।*" (इब्न माजा)`;
     window.open(`https://wa.me/${whatsappMobile}?text=${encodeURIComponent(message)}`, "_blank");
     setFormError("");
   };
